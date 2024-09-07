@@ -1,0 +1,50 @@
+body {
+    background-image: url('fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: #1a1818;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.container {
+    background-color: rgba(248, 243, 243, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #1100ff5e;
+}
+
+a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.item {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.item strong {
+    display: inline-block;
+    width: 150px;
+}
+
+.item img {
+    width: 200px;
+    height: auto;
+}
