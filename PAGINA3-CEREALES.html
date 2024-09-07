@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cereales Integrales</title>
+    <link rel="stylesheet" href="css/cereales Integrales.css">
+</head>
+<body>
+    <header>
+        <h1>Cereales Integrales</h1>
+    </header>
+
+    <section>
+        <h2>Beneficios de los Cereales Integrales</h2>
+        <p>Los cereales integrales son una fuente excelente de fibra, vitaminas
+             y minerales. Consumir cereales integrales regularmente puede mejorar la digestión, 
+             reducir el riesgo de enfermedades cardíacas y ayudarte a mantener un peso saludable.</p>
+    </section>
+
+    <section class="galeria">
+        <h2>Galería de Cereales Integrales</h2>
+        <div class="galeria-imagenes">
+            <div class="imagen">
+                <img src="Cañahu.jpg" alt="Cañahua" onclick="mostrarImagen(this)">
+                <p>Avena Integral</p>
+            </div>
+            <div class="imagen">
+                <img src="Chia.jpg" alt="Chia" onclick="mostrarImagen(this)">
+                <p>Trigo Sarraceno</p>
+            </div>
+            <div class="imagen">
+                <img src="Amaranto.jpg" alt="Amaranto" onclick="mostrarImagen(this)">
+                <p>Arroz Integral</p>
+            </div>
+            <div class="imagen">
+                <img src="Quinua.jpg" alt="Quinua" onclick="mostrarImagen(this)">
+                <p>Quinua</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="imagen-grande" class="imagen-grande">
+        <span onclick="cerrarImagen()">&times;</span>
+        <img class="imagen-contenido" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <script>
+        function mostrarImagen(elemento) {
+            var modal = document.getElementById("imagen-grande");
+            var img = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            
+            modal.style.display = "block";
+            img.src = elemento.src;
+            captionText.innerHTML = elemento.alt;
+        }
+
+        function cerrarImagen() {
+            var modal = document.getElementById("imagen-grande");
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>
+

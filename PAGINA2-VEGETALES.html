@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetales Orgánicos</title>
+    <link rel="stylesheet" href="css/vegetales orggánicos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vegetales Orgánicos</h1>
+        <div class="gallery">
+            <div>
+                <img src="zanahorias.jpg" alt="Zanahorias" onclick="openModal(this.src)">
+                <div class="description">Zanahorias Frescas</div>
+            </div>
+            <div>
+                <img src="Brócolis.jpg" alt="Brócoli" onclick="openModal(this.src)">
+                <div class="description">Brócoli Orgánico</div>
+            </div>
+            <div>
+                <img src="Pimientos.jpg" alt="Pimientos" onclick="openModal(this.src)">
+                <div class="description">Pimientos Coloridos</div>
+            </div>
+            <div>
+                <img src="Tomates.jpg" alt="Tomates" onclick="openModal(this.src)">
+                <div class="description">Tomates Jugosos</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para imágenes -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <script>
+        function openModal(src) {
+            var modal = document.getElementById("myModal");
+            var modalImg = document.getElementById("img01");
+            modal.style.display = "block";
+            modalImg.src = src;
+        }
+        function closeModal() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>

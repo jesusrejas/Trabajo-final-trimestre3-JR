@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legumbres</title>
+    <link rel="stylesheet" href="css/Legumbres.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Legumbres</h1>
+    </header>
+
+    <section>
+        <h2>Beneficios de las Legumbres</h2>
+        <p>Las legumbres son ricas en proteínas, fibra, vitaminas
+             y minerales. Son una excelente opción para las dietas vegetarianas y veganas, 
+             ayudando a mantener un corazón sano y equilibrar los niveles de azúcar en la sangre.</p>
+    </section>
+
+    <section class="galeria">
+        <h2>Galería de Legumbres</h2>
+        <div class="galeria-imagenes">
+            <div class="imagen">
+                <img src="Poroto.jpg" alt="Poroto" onclick="mostrarImagen(this)">
+                <p>Lentejas</p>
+            </div>
+            <div class="imagen">
+                <img src="Soya.jpg" alt="Soya" onclick="mostrarImagen(this)">
+                <p>Garbanzos</p>
+            </div>
+            <div class="imagen">
+                <img src="Arbeja.jpg" alt="Arbeja" onclick="mostrarImagen(this)">
+                <p>Frijoles Negros</p>
+            </div>
+            <div class="imagen">
+                <img src="Abas.jpg" alt="Abas" onclick="mostrarImagen(this)">
+                <p>Alubias</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="imagen-grande" class="imagen-grande">
+        <span onclick="cerrarImagen()">&times;</span>
+        <img class="imagen-contenido" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <script>
+        function mostrarImagen(elemento) {
+            var modal = document.getElementById("imagen-grande");
+            var img = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            
+            modal.style.display = "block";
+            img.src = elemento.src;
+            captionText.innerHTML = elemento.alt;
+        }
+
+        function cerrarImagen() {
+            var modal = document.getElementById("imagen-grande");
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>
