@@ -1,0 +1,18 @@
+body {  
+            font-family: Arial, sans-serif;  
+        }  
+        .button {  
+            background-color: #60af4c; /* Color inicial */  
+            color: rgb(226, 98, 98);  
+            padding: 10px 20px;  
+            text-align: center;  
+            text-decoration: none;  
+            display: inline-block;  
+            margin: 5px;  
+            border: none;  
+            border-radius: 5px;  
+            cursor: pointer;  
+        }  
+        .button:hover {  
+            background-color: #45a049; /* Color al pasar el mouse */  
+        }  
